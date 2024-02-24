@@ -17,19 +17,19 @@ public class OrderRentDataPage {
     //локатор поля срок аренды
     private By orderRentDataRentalPeriod = By.className("Dropdown-placeholder");
     //локатор срок аренды сутки - 1
-    private By orderRentDataRentalPeriod_1day = By.xpath(".//*[@class='Dropdown-option'][1]");
+    private By orderRentDataRentalPeriodOneDay = By.xpath(".//*[@class='Dropdown-option'][1]");
     //локатор срок аренды сутки - 2
-    private By orderRentDataRentalPeriod_2days = By.xpath(".//*[@class='Dropdown-option'][2]");
+    private By orderRentDataRentalPeriodTwoDays = By.xpath(".//*[@class='Dropdown-option'][2]");
     //локатор срок аренды сутки - 3
-    private By orderRentDataRentalPeriod_3days = By.xpath(".//*[@class='Dropdown-option'][3]");
+    private By orderRentDataRentalPeriodThreeDays = By.xpath(".//*[@class='Dropdown-option'][3]");
     //локатор срок аренды сутки - 4
-    private By orderRentDataRentalPeriod_4days = By.xpath(".//*[@class='Dropdown-option'][4]");
+    private By orderRentDataRentalPeriodFourDays = By.xpath(".//*[@class='Dropdown-option'][4]");
     //локатор срок аренды сутки - 5
-    private By orderRentDataRentalPeriod_5days = By.xpath(".//*[@class='Dropdown-option'][5]");
+    private By orderRentDataRentalPeriodFiveDays = By.xpath(".//*[@class='Dropdown-option'][5]");
     //локатор срок аренды сутки - 6
-    private By orderRentDataRentalPeriod_6days = By.xpath(".//*[@class='Dropdown-option'][6]");
+    private By orderRentDataRentalPeriodSixDays = By.xpath(".//*[@class='Dropdown-option'][6]");
     //локатор срок аренды сутки - 7
-    private By orderRentDataRentalPeriod_7days = By.xpath(".//*[@class='Dropdown-option'][7]");
+    private By orderRentDataRentalPeriodSevenDays = By.xpath(".//*[@class='Dropdown-option'][7]");
     //локатор цвета чёрный жемчуг
     private  By orderRentDataColorBlackPearl = By.id("black");
     //локатор цвета серая безысходность
@@ -51,19 +51,19 @@ public class OrderRentDataPage {
     public void chooseOrderRentDataRentalPeriod(int days){
         driver.findElement(orderRentDataRentalPeriod).click();
         if (days == 1){
-            driver.findElement(orderRentDataRentalPeriod_1day).click();
+            driver.findElement(orderRentDataRentalPeriodOneDay).click();
         } else if (days == 2) {
-            driver.findElement(orderRentDataRentalPeriod_2days).click();
+            driver.findElement(orderRentDataRentalPeriodTwoDays).click();
         } else if (days == 3) {
-            driver.findElement(orderRentDataRentalPeriod_3days).click();
+            driver.findElement(orderRentDataRentalPeriodThreeDays).click();
         } else if (days == 4) {
-            driver.findElement(orderRentDataRentalPeriod_4days).click();
+            driver.findElement(orderRentDataRentalPeriodFourDays).click();
         } else if (days == 5) {
-            driver.findElement(orderRentDataRentalPeriod_5days).click();
+            driver.findElement(orderRentDataRentalPeriodFiveDays).click();
         } else if (days == 6) {
-            driver.findElement(orderRentDataRentalPeriod_6days).click();
+            driver.findElement(orderRentDataRentalPeriodSixDays).click();
         } else if (days == 7) {
-            driver.findElement(orderRentDataRentalPeriod_7days).click();
+            driver.findElement(orderRentDataRentalPeriodSevenDays).click();
         }
     }
     //метод выбора цвета черный жемчуг
